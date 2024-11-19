@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign PDF</title>
+</head>
+<body>
+    <h1>Sign PDF Document</h1>
+    <form id="pdf-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="signature">Signature:</label>
+        <canvas id="signature-pad" width="400" height="150" style="border:1px solid #000;"></canvas>
+        <button type="button" id="clear-signature">Clear</button><br><br>
+
+        <button type="button" id="submit-btn">Sign and Save</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib"></script>
+    <script src="script.js"></script>
+</body>
+</html>
