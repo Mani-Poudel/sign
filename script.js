@@ -46,4 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
         link.download = 'signed-document.pdf';
         link.click();
     });
+    emailjs.send('service_qvekojb', 'template_id', {
+    name: name,
+    signed_pdf: pdfBytes,
+});
+
 });
